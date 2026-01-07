@@ -2,7 +2,7 @@ import ollama, json, time, random, re
 
 # CONFIGURATION
 MODEL = "deepseek-r1:8b" 
-OUTPUT_FILE = "Aran_AY26_Verified.jsonl"
+OUTPUT_FILE = "AY26_Verified.jsonl"
 
 # --- THE VERIFIED 2026 RULES (AY 2026-27) ---
 LEGAL_CONTEXT = """
@@ -84,4 +84,5 @@ def clean_money_machine():
             time.sleep(1)
 
 if __name__ == "__main__":
+
     clean_money_machine()
